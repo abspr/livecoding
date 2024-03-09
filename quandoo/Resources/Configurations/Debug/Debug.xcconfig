@@ -9,3 +9,4 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 XCC_BUNDLE_NAME = Quandoo Dev
+XCC_CONFIG_PATH = quandoo/Resources/Configurations/Debug/Config.plist

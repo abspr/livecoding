@@ -26,6 +26,13 @@
 		FED5D5882B9C7DD9007D16CF /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5872B9C7DD9007D16CF /* PostsViewController.swift */; };
 		FED5D58A2B9C7DF8007D16CF /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5892B9C7DF8007D16CF /* PostsViewModel.swift */; };
 		FED5D58E2B9C7E12007D16CF /* PostsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D58D2B9C7E12007D16CF /* PostsCoordinator.swift */; };
+		FED5D5942B9C8A7F007D16CF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5932B9C8A7F007D16CF /* NetworkManager.swift */; };
+		FED5D5962B9C8A87007D16CF /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5952B9C8A87007D16CF /* APIEndpoint.swift */; };
+		FED5D5982B9C8FD1007D16CF /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5972B9C8FD1007D16CF /* Environment.swift */; };
+		FED5D59C2B9C96B7007D16CF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FED5D59B2B9C96B7007D16CF /* Alamofire */; };
+		FED5D59E2B9C9857007D16CF /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D59D2B9C9857007D16CF /* UserService.swift */; };
+		FED5D5A02B9C9867007D16CF /* UserEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D59F2B9C9867007D16CF /* UserEndpoint.swift */; };
+		FED5D5A32B9C995C007D16CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5A22B9C995C007D16CF /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +78,14 @@
 		FED5D5872B9C7DD9007D16CF /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		FED5D5892B9C7DF8007D16CF /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
 		FED5D58D2B9C7E12007D16CF /* PostsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCoordinator.swift; sourceTree = "<group>"; };
+		FED5D5932B9C8A7F007D16CF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FED5D5952B9C8A87007D16CF /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		FED5D5972B9C8FD1007D16CF /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		FED5D59D2B9C9857007D16CF /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		FED5D59F2B9C9867007D16CF /* UserEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEndpoint.swift; sourceTree = "<group>"; };
+		FED5D5A22B9C995C007D16CF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FED5D5A42B9C9A20007D16CF /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		FED5D5A62B9C9A29007D16CF /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FED5D59C2B9C96B7007D16CF /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +121,7 @@
 				FED5D5472B9C4D6D007D16CF /* quandooTests */,
 				FED5D5512B9C4D6D007D16CF /* quandooUITests */,
 				FED5D52F2B9C4D6C007D16CF /* Products */,
+				FED5D59A2B9C96B7007D16CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +140,7 @@
 			children = (
 				FED5D5622B9C4EB0007D16CF /* UI Modules */,
 				FED5D56F2B9C57BD007D16CF /* Coordinators */,
+				FED5D5A12B9C9954007D16CF /* Models */,
 				FED5D56A2B9C54F0007D16CF /* Utilities */,
 				FED5D5612B9C4EA6007D16CF /* Resources */,
 			);
@@ -212,6 +230,8 @@
 			isa = PBXGroup;
 			children = (
 				FED5D56B2B9C54F7007D16CF /* App Delegates */,
+				FED5D58F2B9C88BB007D16CF /* Networking */,
+				FED5D5972B9C8FD1007D16CF /* Environment.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -276,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				FED5D57F2B9C67F2007D16CF /* Debug.xcconfig */,
+				FED5D5A42B9C9A20007D16CF /* Config.plist */,
 			);
 			path = Debug;
 			sourceTree = "<group>";
@@ -284,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				FED5D5802B9C67FD007D16CF /* Release.xcconfig */,
+				FED5D5A62B9C9A29007D16CF /* Config.plist */,
 			);
 			path = Release;
 			sourceTree = "<group>";
@@ -313,6 +335,57 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		FED5D58F2B9C88BB007D16CF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FED5D5902B9C88CC007D16CF /* Core */,
+				FED5D5912B9C88D0007D16CF /* Endpoints */,
+				FED5D5922B9C88D5007D16CF /* Services */,
+			);
+			name = Networking;
+			path = ../Networking;
+			sourceTree = "<group>";
+		};
+		FED5D5902B9C88CC007D16CF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FED5D5932B9C8A7F007D16CF /* NetworkManager.swift */,
+				FED5D5952B9C8A87007D16CF /* APIEndpoint.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FED5D5912B9C88D0007D16CF /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				FED5D59F2B9C9867007D16CF /* UserEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		FED5D5922B9C88D5007D16CF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FED5D59D2B9C9857007D16CF /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FED5D59A2B9C96B7007D16CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FED5D5A12B9C9954007D16CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FED5D5A22B9C995C007D16CF /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -320,6 +393,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FED5D5582B9C4D6D007D16CF /* Build configuration list for PBXNativeTarget "quandoo" */;
 			buildPhases = (
+				FED5D5A82B9C9ADE007D16CF /* Copy Config Files */,
 				FED5D52A2B9C4D6C007D16CF /* Sources */,
 				FED5D52B2B9C4D6C007D16CF /* Frameworks */,
 				FED5D52C2B9C4D6C007D16CF /* Resources */,
@@ -329,6 +403,9 @@
 			dependencies = (
 			);
 			name = quandoo;
+			packageProductDependencies = (
+				FED5D59B2B9C96B7007D16CF /* Alamofire */,
+			);
 			productName = quandoo;
 			productReference = FED5D52E2B9C4D6C007D16CF /* quandoo.app */;
 			productType = "com.apple.product-type.application";
@@ -401,6 +478,9 @@
 				Base,
 			);
 			mainGroup = FED5D5252B9C4D6C007D16CF;
+			packageReferences = (
+				FED5D5992B9C968D007D16CF /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = FED5D52F2B9C4D6C007D16CF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -438,6 +518,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FED5D5A82B9C9ADE007D16CF /* Copy Config Files */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Config Files";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\necho \"${SRCROOT}/${XCC_CONFIG_PATH}\"\ncp -fp \"${SRCROOT}/${XCC_CONFIG_PATH}\" \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Config.plist\"\necho \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Config.plist\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FED5D52A2B9C4D6C007D16CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -445,18 +547,24 @@
 			files = (
 				FED5D5882B9C7DD9007D16CF /* PostsViewController.swift in Sources */,
 				FED5D56D2B9C5506007D16CF /* AppDelegateComposite.swift in Sources */,
+				FED5D59E2B9C9857007D16CF /* UserService.swift in Sources */,
 				FED5D58A2B9C7DF8007D16CF /* PostsViewModel.swift in Sources */,
 				FED5D5852B9C77DC007D16CF /* UsersCoordinator.swift in Sources */,
 				FED5D5762B9C5C84007D16CF /* MainCoordinator.swift in Sources */,
 				FED5D5362B9C4D6C007D16CF /* UsersViewController.swift in Sources */,
 				FED5D5722B9C5BCE007D16CF /* Coordinator.swift in Sources */,
+				FED5D5A32B9C995C007D16CF /* User.swift in Sources */,
+				FED5D5962B9C8A87007D16CF /* APIEndpoint.swift in Sources */,
 				FED5D5782B9C5E09007D16CF /* SetupWindowAppDelegate.swift in Sources */,
 				FED5D5692B9C4F39007D16CF /* UserTableViewCell.swift in Sources */,
 				FED5D5742B9C5BD3007D16CF /* Router.swift in Sources */,
 				FED5D5322B9C4D6C007D16CF /* AppDelegate.swift in Sources */,
 				FED5D57B2B9C60DF007D16CF /* NavigationRouter.swift in Sources */,
+				FED5D5A02B9C9867007D16CF /* UserEndpoint.swift in Sources */,
+				FED5D5942B9C8A7F007D16CF /* NetworkManager.swift in Sources */,
 				FED5D58E2B9C7E12007D16CF /* PostsCoordinator.swift in Sources */,
 				FED5D5822B9C693F007D16CF /* UsersViewModel.swift in Sources */,
+				FED5D5982B9C8FD1007D16CF /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,6 +740,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = quandoo/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -663,6 +772,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = quandoo/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -799,6 +909,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FED5D5992B9C968D007D16CF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FED5D59B2B9C96B7007D16CF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FED5D5992B9C968D007D16CF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FED5D5262B9C4D6C007D16CF /* Project object */;
 }
