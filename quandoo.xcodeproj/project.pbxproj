@@ -33,6 +33,10 @@
 		FED5D59E2B9C9857007D16CF /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D59D2B9C9857007D16CF /* UserService.swift */; };
 		FED5D5A02B9C9867007D16CF /* UserEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D59F2B9C9867007D16CF /* UserEndpoint.swift */; };
 		FED5D5A32B9C995C007D16CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5A22B9C995C007D16CF /* User.swift */; };
+		FED5D5AC2B9CAF32007D16CF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FED5D5AB2B9CAF32007D16CF /* SnapKit */; };
+		FED5D5AE2B9CB342007D16CF /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5AD2B9CB342007D16CF /* UserInfoView.swift */; };
+		FED5D5B02B9CB641007D16CF /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5AF2B9CB641007D16CF /* Address.swift */; };
+		FED5D5B22B9CB836007D16CF /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = FED5D5B12B9CB836007D16CF /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +90,9 @@
 		FED5D5A22B9C995C007D16CF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FED5D5A42B9C9A20007D16CF /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		FED5D5A62B9C9A29007D16CF /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		FED5D5AD2B9CB342007D16CF /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		FED5D5AF2B9CB641007D16CF /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		FED5D5B12B9CB836007D16CF /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FED5D59C2B9C96B7007D16CF /* Alamofire in Frameworks */,
+				FED5D5AC2B9CAF32007D16CF /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +178,7 @@
 				FED5D57C2B9C67C4007D16CF /* Configurations */,
 				FED5D53F2B9C4D6D007D16CF /* Info.plist */,
 				FED5D53A2B9C4D6D007D16CF /* Assets.xcassets */,
+				FED5D5B12B9CB836007D16CF /* Localizable.xcstrings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -222,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				FED5D5682B9C4F39007D16CF /* UserTableViewCell.swift */,
+				FED5D5AD2B9CB342007D16CF /* UserInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -382,6 +392,7 @@
 			isa = PBXGroup;
 			children = (
 				FED5D5A22B9C995C007D16CF /* User.swift */,
+				FED5D5AF2B9CB641007D16CF /* Address.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -405,6 +416,7 @@
 			name = quandoo;
 			packageProductDependencies = (
 				FED5D59B2B9C96B7007D16CF /* Alamofire */,
+				FED5D5AB2B9CAF32007D16CF /* SnapKit */,
 			);
 			productName = quandoo;
 			productReference = FED5D52E2B9C4D6C007D16CF /* quandoo.app */;
@@ -480,6 +492,7 @@
 			mainGroup = FED5D5252B9C4D6C007D16CF;
 			packageReferences = (
 				FED5D5992B9C968D007D16CF /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FED5D5AA2B9CAF28007D16CF /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = FED5D52F2B9C4D6C007D16CF /* Products */;
 			projectDirPath = "";
@@ -499,6 +512,7 @@
 			files = (
 				FED5D53B2B9C4D6D007D16CF /* Assets.xcassets in Resources */,
 				FED5D53E2B9C4D6D007D16CF /* Base in Resources */,
+				FED5D5B22B9CB836007D16CF /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,10 +574,12 @@
 				FED5D5742B9C5BD3007D16CF /* Router.swift in Sources */,
 				FED5D5322B9C4D6C007D16CF /* AppDelegate.swift in Sources */,
 				FED5D57B2B9C60DF007D16CF /* NavigationRouter.swift in Sources */,
+				FED5D5AE2B9CB342007D16CF /* UserInfoView.swift in Sources */,
 				FED5D5A02B9C9867007D16CF /* UserEndpoint.swift in Sources */,
 				FED5D5942B9C8A7F007D16CF /* NetworkManager.swift in Sources */,
 				FED5D58E2B9C7E12007D16CF /* PostsCoordinator.swift in Sources */,
 				FED5D5822B9C693F007D16CF /* UsersViewModel.swift in Sources */,
+				FED5D5B02B9CB641007D16CF /* Address.swift in Sources */,
 				FED5D5982B9C8FD1007D16CF /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -919,6 +935,14 @@
 				minimumVersion = 5.9.0;
 			};
 		};
+		FED5D5AA2B9CAF28007D16CF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -926,6 +950,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FED5D5992B9C968D007D16CF /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		FED5D5AB2B9CAF32007D16CF /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FED5D5AA2B9CAF28007D16CF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

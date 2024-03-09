@@ -16,11 +16,12 @@ class UsersCoordinator: Coordinator {
     // MARK: - Life Cycle
     init(router: Router) {
         self.router = router
+        router.navigationController.navigationBar.prefersLargeTitles = true
     }
     
     // MARK: - Methods
     func route(animated: Bool, onDismissed: (() -> Void)?) {
-        let viewController = UsersViewController(nibName: nil, bundle: nil)
+        let viewController = UsersViewController()
         viewController.coordinator = self
         router.route(to: viewController, animated: false, onDismissed: nil)
     }
@@ -28,7 +29,7 @@ class UsersCoordinator: Coordinator {
 
 extension UsersCoordinator: UsersViewControllerDelegate {
     
-    func routeToPost() {
+    func routeToPost(by userId: Int) {
         let postCoordinator = PostsCoordinator(router: router)
         routeToChildCoordinator(postCoordinator, animated: true, onDismissed: nil)
     }
