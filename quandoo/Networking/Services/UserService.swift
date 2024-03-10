@@ -28,4 +28,12 @@ class UserService {
             completion: completion
         )
     }
+    
+    func posts(by userId: Int, _ completion: @escaping ResultCompletion<[Post]>) {
+        networkManager.responseDecodable(
+            of: [Post].self,
+            endpoint: UserEndpoint.posts(userId: userId),
+            completion: completion
+        )
+    }
 }

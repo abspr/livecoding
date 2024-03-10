@@ -10,16 +10,18 @@ import Alamofire
 
 enum UserEndpoint: APIEndpoint {
     case users
+    case posts(userId: Int)
    
     var method: Alamofire.HTTPMethod {
         switch self {
-        case .users: return .get
+        case .users, .posts: return .get
         }
     }
     
     var path: String {
         switch self {
         case .users: return "users"
+        case .posts: return "posts"
         }
     }
     
@@ -27,6 +29,11 @@ enum UserEndpoint: APIEndpoint {
         switch self {
         case .users:
             return .regular(parameters: nil, encoding: URLEncoding.default)
+            
+        case .posts(let userId):
+            return .regular(
+                parameters: ["userId": userId], encoding: URLEncoding.default
+            )
         }
     }
        

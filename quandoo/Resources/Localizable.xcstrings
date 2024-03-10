@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Posts" : {
+
+    },
     "users title" : {
       "comment" : "User View Controller title",
       "localizations" : {

@@ -9,7 +9,7 @@ import UIKit
 import Combine
 
 protocol UsersViewControllerDelegate: AnyObject {
-    func routeToPost(by userId: Int)
+    func routeToPosts(by userId: Int)
 }
 
 class UsersViewController: UITableViewController {
@@ -26,7 +26,7 @@ class UsersViewController: UITableViewController {
     // MARK: Life Cycle
     init(_ viewModel: UsersViewModel = .init()) {
         self.viewModel = viewModel
-        super.init(style: .insetGrouped)
+        super.init(style: .plain)
     }
     
     required init?(coder: NSCoder) {
@@ -80,7 +80,7 @@ extension UsersViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         
         if let user = dataSource.itemIdentifier(for: indexPath) {
-            coordinator?.routeToPost(by: user.id)
+            coordinator?.routeToPosts(by: user.id)
         }
     }
     

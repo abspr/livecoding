@@ -23,7 +23,7 @@
 		FED5D57B2B9C60DF007D16CF /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D57A2B9C60DF007D16CF /* NavigationRouter.swift */; };
 		FED5D5822B9C693F007D16CF /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5812B9C693F007D16CF /* UsersViewModel.swift */; };
 		FED5D5852B9C77DC007D16CF /* UsersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5842B9C77DC007D16CF /* UsersCoordinator.swift */; };
-		FED5D5882B9C7DD9007D16CF /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5872B9C7DD9007D16CF /* PostsViewController.swift */; };
+		FED5D5882B9C7DD9007D16CF /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5872B9C7DD9007D16CF /* PostsView.swift */; };
 		FED5D58A2B9C7DF8007D16CF /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5892B9C7DF8007D16CF /* PostsViewModel.swift */; };
 		FED5D58E2B9C7E12007D16CF /* PostsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D58D2B9C7E12007D16CF /* PostsCoordinator.swift */; };
 		FED5D5942B9C8A7F007D16CF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5932B9C8A7F007D16CF /* NetworkManager.swift */; };
@@ -37,6 +37,7 @@
 		FED5D5AE2B9CB342007D16CF /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5AD2B9CB342007D16CF /* UserInfoView.swift */; };
 		FED5D5B02B9CB641007D16CF /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5AF2B9CB641007D16CF /* Address.swift */; };
 		FED5D5B22B9CB836007D16CF /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = FED5D5B12B9CB836007D16CF /* Localizable.xcstrings */; };
+		FED5D5B42B9D9AA8007D16CF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5B32B9D9AA8007D16CF /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +80,7 @@
 		FED5D5802B9C67FD007D16CF /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		FED5D5812B9C693F007D16CF /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 		FED5D5842B9C77DC007D16CF /* UsersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCoordinator.swift; sourceTree = "<group>"; };
-		FED5D5872B9C7DD9007D16CF /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		FED5D5872B9C7DD9007D16CF /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		FED5D5892B9C7DF8007D16CF /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
 		FED5D58D2B9C7E12007D16CF /* PostsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCoordinator.swift; sourceTree = "<group>"; };
 		FED5D5932B9C8A7F007D16CF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -93,6 +94,7 @@
 		FED5D5AD2B9CB342007D16CF /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		FED5D5AF2B9CB641007D16CF /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		FED5D5B12B9CB836007D16CF /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		FED5D5B32B9D9AA8007D16CF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,7 +342,7 @@
 		FED5D58C2B9C7E01007D16CF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FED5D5872B9C7DD9007D16CF /* PostsViewController.swift */,
+				FED5D5872B9C7DD9007D16CF /* PostsView.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -393,6 +395,7 @@
 			children = (
 				FED5D5A22B9C995C007D16CF /* User.swift */,
 				FED5D5AF2B9CB641007D16CF /* Address.swift */,
+				FED5D5B32B9D9AA8007D16CF /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -559,7 +562,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FED5D5882B9C7DD9007D16CF /* PostsViewController.swift in Sources */,
+				FED5D5882B9C7DD9007D16CF /* PostsView.swift in Sources */,
 				FED5D56D2B9C5506007D16CF /* AppDelegateComposite.swift in Sources */,
 				FED5D59E2B9C9857007D16CF /* UserService.swift in Sources */,
 				FED5D58A2B9C7DF8007D16CF /* PostsViewModel.swift in Sources */,
@@ -571,6 +574,7 @@
 				FED5D5962B9C8A87007D16CF /* APIEndpoint.swift in Sources */,
 				FED5D5782B9C5E09007D16CF /* SetupWindowAppDelegate.swift in Sources */,
 				FED5D5692B9C4F39007D16CF /* UserTableViewCell.swift in Sources */,
+				FED5D5B42B9D9AA8007D16CF /* Post.swift in Sources */,
 				FED5D5742B9C5BD3007D16CF /* Router.swift in Sources */,
 				FED5D5322B9C4D6C007D16CF /* AppDelegate.swift in Sources */,
 				FED5D57B2B9C60DF007D16CF /* NavigationRouter.swift in Sources */,

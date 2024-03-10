@@ -29,8 +29,8 @@ class UsersCoordinator: Coordinator {
 
 extension UsersCoordinator: UsersViewControllerDelegate {
     
-    func routeToPost(by userId: Int) {
-        let postCoordinator = PostsCoordinator(router: router)
+    func routeToPosts(by userId: Int) {
+        let postCoordinator = PostsCoordinator(router: router, userId: userId)
         routeToChildCoordinator(postCoordinator, animated: true, onDismissed: nil)
     }
     
