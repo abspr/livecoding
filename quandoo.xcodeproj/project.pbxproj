@@ -33,7 +33,6 @@
 		FED5D59E2B9C9857007D16CF /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D59D2B9C9857007D16CF /* UserService.swift */; };
 		FED5D5A02B9C9867007D16CF /* UserEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D59F2B9C9867007D16CF /* UserEndpoint.swift */; };
 		FED5D5A32B9C995C007D16CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5A22B9C995C007D16CF /* User.swift */; };
-		FED5D5AC2B9CAF32007D16CF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FED5D5AB2B9CAF32007D16CF /* SnapKit */; };
 		FED5D5AE2B9CB342007D16CF /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5AD2B9CB342007D16CF /* UserInfoView.swift */; };
 		FED5D5B02B9CB641007D16CF /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5AF2B9CB641007D16CF /* Address.swift */; };
 		FED5D5B22B9CB836007D16CF /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = FED5D5B12B9CB836007D16CF /* Localizable.xcstrings */; };
@@ -103,7 +102,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FED5D59C2B9C96B7007D16CF /* Alamofire in Frameworks */,
-				FED5D5AC2B9CAF32007D16CF /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +417,6 @@
 			name = quandoo;
 			packageProductDependencies = (
 				FED5D59B2B9C96B7007D16CF /* Alamofire */,
-				FED5D5AB2B9CAF32007D16CF /* SnapKit */,
 			);
 			productName = quandoo;
 			productReference = FED5D52E2B9C4D6C007D16CF /* quandoo.app */;
@@ -495,7 +492,6 @@
 			mainGroup = FED5D5252B9C4D6C007D16CF;
 			packageReferences = (
 				FED5D5992B9C968D007D16CF /* XCRemoteSwiftPackageReference "Alamofire" */,
-				FED5D5AA2B9CAF28007D16CF /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = FED5D52F2B9C4D6C007D16CF /* Products */;
 			projectDirPath = "";
@@ -939,14 +935,6 @@
 				minimumVersion = 5.9.0;
 			};
 		};
-		FED5D5AA2B9CAF28007D16CF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.7.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -954,11 +942,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FED5D5992B9C968D007D16CF /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		FED5D5AB2B9CAF32007D16CF /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FED5D5AA2B9CAF28007D16CF /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

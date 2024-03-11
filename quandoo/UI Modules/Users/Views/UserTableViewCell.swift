@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SnapKit
 
 class UserTableViewCell: UITableViewCell {
     
@@ -56,11 +55,15 @@ class UserTableViewCell: UITableViewCell {
         stackView.axis = .vertical
         stackView.spacing = 4
         stackView.setCustomSpacing(8, after: nameLabel)
+        stackView.translatesAutoresizingMaskIntoConstraints = false
         
         contentView.addSubview(stackView)
         
-        stackView.snp.makeConstraints { make in
-            make.edges.equalToSuperview().inset(20)
-        }
+        NSLayoutConstraint.activate([
+            stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
+            stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
+            stackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20),
+            stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20)
+        ])
     }
 }
