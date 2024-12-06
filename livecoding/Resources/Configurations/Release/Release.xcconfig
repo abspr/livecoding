@@ -1,0 +1,12 @@
+//
+//  Release.xcconfig
+//  livecoding
+//
+//  Created by Hosein Abbaspour on 3/9/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+XCC_BUNDLE_NAME = Coding
+XCC_CONFIG_PATH = livecoding/Resources/Configurations/Release/Config.plist
