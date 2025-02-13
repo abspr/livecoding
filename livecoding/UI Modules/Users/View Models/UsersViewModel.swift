@@ -10,11 +10,11 @@ import UIKit
 class UsersViewModel {
     
     // MARK: - Types
-    typealias DataSourceSnapshot = NSDiffableDataSourceSnapshot<Section, User>
-    typealias DataSource = UITableViewDiffableDataSource<Section, User>
+    typealias DataSourceSnapshot = NSDiffableDataSourceSnapshot<Section, AnyHashable>
+    typealias DataSource = UICollectionViewDiffableDataSource<Section, AnyHashable>
     
     enum Section {
-        case users
+        case users, chips
     }
     
     // MARK: - Properties
@@ -42,8 +42,9 @@ class UsersViewModel {
     
     private func updateSnapshot(using users: [User]) {
         var snapshot = DataSourceSnapshot()
-        snapshot.appendSections([.users])
-        snapshot.appendItems(users)
+        snapshot.appendSections([.chips, .users])
+        snapshot.appendItems(users.map { $0.username }, toSection: .chips)
+        snapshot.appendItems(users, toSection: .users)
         self.snapshot = snapshot
     }
     

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE0307F72D5DD12400A94A4E /* NSCollectionLayoutGroup+RowsGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0307F62D5DD12400A94A4E /* NSCollectionLayoutGroup+RowsGroup.swift */; };
+		FE0307F92D5DD1AB00A94A4E /* ChipViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0307F82D5DD1AB00A94A4E /* ChipViewCell.swift */; };
 		FE7633E32D018E0200C603F9 /* LettersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7633E22D018E0200C603F9 /* LettersCoordinator.swift */; };
 		FE7633E72D018E4600C603F9 /* LettersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7633E62D018E4600C603F9 /* LettersViewController.swift */; };
 		FE7633EB2D018E6400C603F9 /* LettersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7633EA2D018E6400C603F9 /* LettersViewModel.swift */; };
@@ -18,7 +20,7 @@
 		FED5D5492B9C4D6D007D16CF /* livecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5482B9C4D6D007D16CF /* livecodingTests.swift */; };
 		FED5D5532B9C4D6D007D16CF /* livecodingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5522B9C4D6D007D16CF /* livecodingUITests.swift */; };
 		FED5D5552B9C4D6D007D16CF /* livecodingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5542B9C4D6D007D16CF /* livecodingUITestsLaunchTests.swift */; };
-		FED5D5692B9C4F39007D16CF /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5682B9C4F39007D16CF /* UserTableViewCell.swift */; };
+		FED5D5692B9C4F39007D16CF /* UserViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5682B9C4F39007D16CF /* UserViewCell.swift */; };
 		FED5D56D2B9C5506007D16CF /* AppDelegateComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D56C2B9C5506007D16CF /* AppDelegateComposite.swift */; };
 		FED5D5722B9C5BCE007D16CF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5712B9C5BCE007D16CF /* Coordinator.swift */; };
 		FED5D5742B9C5BD3007D16CF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5D5732B9C5BD3007D16CF /* Router.swift */; };
@@ -61,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE0307F62D5DD12400A94A4E /* NSCollectionLayoutGroup+RowsGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCollectionLayoutGroup+RowsGroup.swift"; sourceTree = "<group>"; };
+		FE0307F82D5DD1AB00A94A4E /* ChipViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipViewCell.swift; sourceTree = "<group>"; };
 		FE7633E22D018E0200C603F9 /* LettersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersCoordinator.swift; sourceTree = "<group>"; };
 		FE7633E62D018E4600C603F9 /* LettersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersViewController.swift; sourceTree = "<group>"; };
 		FE7633EA2D018E6400C603F9 /* LettersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersViewModel.swift; sourceTree = "<group>"; };
@@ -76,7 +80,7 @@
 		FED5D54E2B9C4D6D007D16CF /* livecodingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = livecodingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED5D5522B9C4D6D007D16CF /* livecodingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = livecodingUITests.swift; sourceTree = "<group>"; };
 		FED5D5542B9C4D6D007D16CF /* livecodingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = livecodingUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FED5D5682B9C4F39007D16CF /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		FED5D5682B9C4F39007D16CF /* UserViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewCell.swift; sourceTree = "<group>"; };
 		FED5D56C2B9C5506007D16CF /* AppDelegateComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateComposite.swift; sourceTree = "<group>"; };
 		FED5D5712B9C5BCE007D16CF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		FED5D5732B9C5BD3007D16CF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -273,7 +277,9 @@
 		FED5D5672B9C4EFC007D16CF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FED5D5682B9C4F39007D16CF /* UserTableViewCell.swift */,
+				FE0307F62D5DD12400A94A4E /* NSCollectionLayoutGroup+RowsGroup.swift */,
+				FE0307F82D5DD1AB00A94A4E /* ChipViewCell.swift */,
+				FED5D5682B9C4F39007D16CF /* UserViewCell.swift */,
 				FED5D5AD2B9CB342007D16CF /* UserInfoView.swift */,
 			);
 			path = Views;
@@ -612,9 +618,11 @@
 				FED5D5362B9C4D6C007D16CF /* UsersViewController.swift in Sources */,
 				FED5D5722B9C5BCE007D16CF /* Coordinator.swift in Sources */,
 				FED5D5A32B9C995C007D16CF /* User.swift in Sources */,
+				FE0307F92D5DD1AB00A94A4E /* ChipViewCell.swift in Sources */,
 				FED5D5962B9C8A87007D16CF /* APIEndpoint.swift in Sources */,
 				FED5D5782B9C5E09007D16CF /* SetupWindowAppDelegate.swift in Sources */,
-				FED5D5692B9C4F39007D16CF /* UserTableViewCell.swift in Sources */,
+				FED5D5692B9C4F39007D16CF /* UserViewCell.swift in Sources */,
+				FE0307F72D5DD12400A94A4E /* NSCollectionLayoutGroup+RowsGroup.swift in Sources */,
 				FED5D5B42B9D9AA8007D16CF /* Post.swift in Sources */,
 				FED5D5742B9C5BD3007D16CF /* Router.swift in Sources */,
 				FED5D5322B9C4D6C007D16CF /* AppDelegate.swift in Sources */,

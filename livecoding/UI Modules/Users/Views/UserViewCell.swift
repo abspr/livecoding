@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UserTableViewCell: UITableViewCell {
+class UserViewCell: UICollectionViewCell {
     
     //MARK: - UI Components
     private lazy var nameLabel: UILabel = {
@@ -32,8 +32,8 @@ class UserTableViewCell: UITableViewCell {
     }
     
     //MARK: - LifeCycle
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         
         setupViews()
     }
@@ -46,8 +46,6 @@ class UserTableViewCell: UITableViewCell {
     
     //MARK: - Methods
     private func setupViews() {
-        accessoryType = .disclosureIndicator
-        
         let stackView = UIStackView(arrangedSubviews: [
             nameLabel, usernameView, emailView, addressView
         ])

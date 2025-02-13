@@ -35,4 +35,9 @@ extension UsersCoordinator: UsersViewControllerDelegate {
         routeToChildCoordinator(postCoordinator, animated: true, onDismissed: nil)
     }
     
+    func routeToLetters(_ letters: [String]) {
+        let lettersCoordinator = LettersCoordinator(router: router, letters: letters)
+        routeToChildCoordinator(lettersCoordinator, animated: true, onDismissed: nil)
+    }
+    
 }
